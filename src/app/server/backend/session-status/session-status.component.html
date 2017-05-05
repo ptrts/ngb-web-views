@@ -1,0 +1,5 @@
+<div [(ngModel)]="model" ngbRadioGroup>
+  <label *ngFor="let buttonModel of buttonModels" class="btn btn-success btn-sm">
+    <input type="radio" [value]="buttonModel.index" (change)="onChanged($event)">{{buttonModel.name}}
+  </label>
+</div>
